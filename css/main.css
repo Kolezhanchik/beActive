@@ -1,0 +1,444 @@
+specification
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, span, input, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.5em;
+	font-weight: 400;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	text-transform: none;
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
+	text-transform: none;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+a, a:hover, a:active, a:focus, 
+input, input:hover, input:active, input:focus, 
+button, button:hover, button:active, button:focus {
+	outline: none;
+} 
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+.logo {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 30px;
+	color: #90a327;
+	width: 0px;
+}
+
+.logo span {
+	color: #fff;
+	font-weight: 400;
+}
+
+.logo:hover {
+	color: #90a327;
+	border-bottom: 3px solid #9a9a9f;
+	padding-bottom: 25px;
+}
+
+.btn {
+	background: #90a327;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;		
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.btn:hover, .btn:active, .btn:focus  {
+	background: transparent;
+	border: 1px solid #90a327;
+	color: #90a327;
+	box-shadow: none;
+}
+
+/*header screen*/
+
+.header {
+	background: #2f292b url(../img/header-background.jpg) no-repeat center top / cover;
+	padding: 25px 0 240px;
+}
+
+.row-border {
+	border-bottom: 1px solid #9a9a9f;
+    padding-bottom: 26px;
+}
+
+.navigation {
+    padding-top: 12px;
+    max-width: 585px;
+    margin-left: auto;
+    margin-bottom: 9px;
+}
+
+.navigation__item a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.navigation__item a:hover {
+	border-bottom: 3px solid #9a9a9f;
+	padding-bottom: 34px;
+	color: #90a327;
+}
+
+.header__title {
+	color: #fff;
+    margin: 180px 0 35px;
+}
+
+.header__title span{
+	color: #90a327;
+}
+
+.header__text {
+	color: #fff;
+	max-width: 555px;
+	font-size: 22px;
+	margin-bottom: 25px;
+}
+
+.header__btn {
+	padding: 15px 47px;
+}
+
+/*second screen*/
+
+.features {
+	padding: 120px 0 50px;
+}
+
+.features__item {
+	margin-bottom: 71px;
+	max-width: 305px;
+}
+
+.features__item {
+	transition: all 0.9s ease;
+}
+
+.features__item:hover img {
+	-moz-transform: translate(0px, 25px);
+	-webkit-transform: translate(0px, 25px);
+	-o-transform: translate(0px, 25px);
+	-ms-transform: translate(0px, 25px);
+	transform: translate(0px, 25px);
+}
+
+.features__title {
+    margin: 34px 0 18px;
+}
+
+/*third screen*/
+
+.gallery {
+	padding-bottom: 107px;
+}
+
+.gallery__item {
+	position: relative;
+	margin-bottom: 25px;
+	display: inline-block;
+}
+
+.gallery__overlay {
+	position: absolute;
+	background: rgba(232, 69, 69, 0.8);
+	width: 50%;
+	height: 50%;
+	opacity: 0;
+	left: 50%;
+	top: 50%;
+	transition: all 0.9s ease;
+	text-align: center;
+	color: #fff;
+	padding-top: 35%;
+	border-radius: 100px;
+}
+
+.gallery__item:hover .gallery__overlay {
+	opacity: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+}
+
+.gallary__image {
+	display: block;
+	margin: auto;
+}
+
+/*fourth screen*/
+
+.team {
+	background: #f1f2fd;
+	padding: 124px 0 114px
+}
+
+.team__photo {
+	margin-bottom: 25px;
+}
+
+
+.team__role {
+	color: #e84545;
+	text-transform: uppercase;
+}
+
+.team__text {
+	margin: 22px 0 27px;
+}
+
+.team__socials i {
+	color: #c6cacc;
+	border: 1px solid #c6cacc;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 19px;
+}
+
+.team__socials i:hover {
+	color: #1d3bf0;
+	border: 1px solid #1d3bf0;
+	border-radius: 15px;
+}
+
+/*fifth screen*/
+
+.coffee__picture {
+	background: #e6e9ee  url(../img/woman-coffee.jpg) no-repeat center right;
+	height: 100%;
+}
+
+.coffee__quote {
+	background: #53354a;
+	padding: 50px 0 50px 25px;
+}
+
+.coffee__text {
+	font-style: italic;
+	color: #fff;
+	font-size: 36px;
+	max-width: 515px;
+	line-height: 1.2em;
+    margin: 80px 0 77px 45px;
+}
+
+.coffee__text span{
+	display: block;
+	font-size: 13px;
+	color: #fff;
+	text-transform: uppercase;
+    font-style: normal;
+    line-height: 5.5em;
+}
+
+/*sixth screen*/
+
+.offer {
+	padding: 95px 0 100px;
+	color: #2d3033;
+	text-align: center;
+}
+
+.offer__text {
+	font-size: 13px;
+	text-transform: uppercase;
+	line-height: 1.9em;
+}
+
+.offer__btn {
+	margin-top: 32px;
+    padding: 13px 80px;
+}
+
+
+/*footer screen*/
+
+.footer {
+	text-align: center;
+	background: #3a3e64;
+	border-bottom: 15px solid #313454;
+	padding: 83px 0 45px 0;
+}
+
+.footer__title {
+	color: #ebebef;
+	margin-bottom: 13px;
+}
+
+.footer__text {
+	color: #ebebef;
+}
+
+.footer__text_copyrite {
+	color: #808080;
+}
+
+.footer__text_copyrite>:first-child {	
+	color: #e84545;
+}
+
+.footer__text_copyrite>:last-child {	
+	color: #c0c1ca;
+}
+
+
+/*media queries*/
+
+/*992-1200px*/
+
+@media screen and (max-width: 1200px) {
+	
+	.team__member {
+		margin-bottom: 40px;
+	}
+
+	.gallery {
+	    padding-bottom: 80px;
+	}
+
+	.team {
+	    padding: 80px 0;
+	}
+	
+	.coffee__text {
+		margin-left: 0px;
+	}
+
+	.coffee__quote {
+	    padding: 2px 0 50px 25px;
+	}
+}
+
+
+/*768-992px*/
+
+@media screen and (max-width: 992px) {
+	
+	.features__item {
+		min-width: 100%;
+	}
+
+	.coffee__picture {
+		min-height: 500px;
+	}
+
+	.coffee__text {
+		text-align: center;
+		margin: 50px 10px 20px;
+	}
+
+	.footer__text {
+		margin-bottom: 40px;
+	}
+}
+
+/*576-768px*/
+
+@media screen and (max-width: 768px) {
+	.header {
+		padding-bottom: 120px;
+	}
+
+	.team__member {
+	    text-align: center;
+	}
+
+}
+
+
+/*320-576px*/
+
+@media screen  and (max-width: 576px) {	
+
+	.header  {
+		text-align: center;
+	}
+
+	.header__text {
+	    max-width: 52%;
+	    font-size: 20px;
+	    margin-bottom: 45px;
+	}
+
+	.navigation {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.header__title {
+	    font-size: 35px;
+	    margin: 114px 0 35px;
+	}
+
+	.gallery {
+	    padding-bottom: 45px;
+	}
+
+	.team {
+		padding-bottom: 30px;
+	}
+
+}
+
