@@ -10,4 +10,4 @@
 5. Bootstarp4  
 
 
-* [Ссылка на веб-страницу проекта](https://kolenhen.github.io/beActive/index.html)
+* [Ссылка на веб-страницу проекта](https://Kolezhanchik.github.io/beActive/index.html)
